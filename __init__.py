@@ -369,9 +369,12 @@ class Chrome(ChromiumBased):
                     '~/.config/google-chrome-beta/Default/Cookies'
                 ],
             'windows_cookies':[
-                    {'env':'APPDATA', 'path':'..\\Local\\Google\\Chrome\\User Data\\Default\\Cookies'},
-                    {'env':'LOCALAPPDATA', 'path':'Google\\Chrome\\User Data\\Default\\Cookies'},
-                    {'env':'APPDATA', 'path':'Google\\Chrome\\User Data\\Default\\Cookies'}
+                    {'env': 'APPDATA', 'path': '..\\Local\\Google\\Chrome\\User Data\\Default\\Cookies'},
+                    {'env': 'APPDATA', 'path': '..\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies'},
+                    {'env': 'LOCALAPPDATA', 'path': 'Google\\Chrome\\User Data\\Default\\Cookies'},
+                    {'env': 'LOCALAPPDATA', 'path': 'Google\\Chrome\\User Data\\Default\\Network\\Cookies'},
+                    {'env': 'APPDATA', 'path': 'Google\\Chrome\\User Data\\Default\\Cookies'},
+                    {'env': 'APPDATA', 'path': 'Google\\Chrome\\User Data\\Default\\Network\\Cookies'}
                 ],
             'osx_cookies': ['~/Library/Application Support/Google/Chrome/Default/Cookies'],
             'windows_keys': [
@@ -392,9 +395,12 @@ class Chromium(ChromiumBased):
         args = {
             'linux_cookies':['~/.config/chromium/Default/Cookies'],
             'windows_cookies':[
-                    {'env':'APPDATA', 'path':'..\\Local\\Chromium\\User Data\\Default\\Cookies'},
-                    {'env':'LOCALAPPDATA', 'path':'Chromium\\User Data\\Default\\Cookies'},
-                    {'env':'APPDATA', 'path':'Chromium\\User Data\\Default\\Cookies'}
+                    {'env': 'APPDATA', 'path': '..\\Local\\Chromium\\User Data\\Default\\Cookies'},
+                    {'env': 'APPDATA', 'path': '..\\Local\\Chromium\\User Data\\Default\\Network\\Cookies'},
+                    {'env': 'LOCALAPPDATA', 'path': 'Chromium\\User Data\\Default\\Cookies'},
+                    {'env': 'LOCALAPPDATA', 'path': 'Chromium\\User Data\\Default\\Network\\Cookies'},
+                    {'env': 'APPDATA', 'path': 'Chromium\\User Data\\Default\\Cookies'},
+                    {'env': 'APPDATA', 'path': 'Chromium\\User Data\\Default\\Network\\Cookies'}
             ],
             'osx_cookies': ['~/Library/Application Support/Chromium/Default/Cookies'],
             'windows_keys': [
